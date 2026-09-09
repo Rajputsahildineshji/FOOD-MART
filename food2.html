@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodMart - Grocery Store</title>
+    <link rel="stylesheet" href="food2.css">
+   
+</head>
+<body>
+    <!-- ============== TOP HEADER ============== -->
+    <div class="top-header">
+        <div class="container">
+            <div class="header-left">
+                <span>📞 Call us: +1-800-FOODMART</span>
+                <span class="divider">|</span>
+                <span>📧 Email: support@foodmart.com</span>
+            </div>
+            <div class="header-right">
+                <a href="#track">Track Order</a>
+                <a href="#help">Help</a>
+                <a href="#account">My Account</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============== MAIN HEADER ============== -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>🛒 FoodMart</h1>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder= "Search for products...">
+                    <button class="search-btn">🔍 Search</button>
+                </div>
+
+                <!-- Right Section -->
+                <div class="header-icons">
+                    <div class="icon-group">
+                         <span class="icon">❤️</span>
+                        <span class="label">Wishlist</span>
+                    </div>
+                    <div class="icon-group">
+                        <span class="icon">👤</span>
+                        <span class="label">Account</span>
+                    </div>
+                    <div class="icon-group cart-icon">
+                        <span class="icon">🛒</span>
+                        <span class="cart-count">0</span>
+                        <span class="label">Cart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============== CATEGORY NAVIGATION ============== -->
+    <nav class="category-nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#shop">🏪 Shop by Department</a></li> 
+                <li><a href="#women">👗 Women</a></li>
+                <li><a href="#men">👔 Men</a></li>
+                <li><a href="#kids">👶 Kids</a></li>
+                <li><a href="#accessories">💍 Accessories</a></li>
+                <li><a href="#pages">📄 Pages</a></li>
+                <li><a href="#brand">🏷️ Brand</a></li>
+                <li><a href="#sale">🔥 Sale</a></li>
+                <li><a href="#blog">📝 Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============== HERO BANNER SECTION ============== -->
+    <section class="hero-banners">
+        <div class="container">
+            <div class="banners-grid">
+                <!-- Fresh Smoothie & Summer Juice -->
+                <div class="banner-card banner-1">
+                    <div class="banner-content">
+                        <h2>Fresh Smoothie & Summer Juice</h2>
+                        <p>Refreshing beverages for hot days</p>
+                        <button class="banner-btn">Shop Collection →</button>
+                    </div>
+                    <div class="banner-image">🥤</div>
+                </div>
+
+                <!-- Fruits & Vegetables -->
+                <div class="banner-card banner-2">
+                    <div class="banner-content">
+                        <h2>Fruits & Vegetables</h2>
+                        <p>Fresh organic produce daily</p>
+                        <button class="banner-btn">Shop Collection →</button>
+                    </div>
+                    <div class="banner-image">🥗</div>
+                </div>
+
+                <!-- Baked Products -->
+                <div class="banner-card banner-3">
+                    <div class="banner-content">
+                        <h2>Baked Products</h2>
+                        <p>Freshly baked every morning</p>
+                        <button class="banner-btn">Shop Collection →</button>
+                    </div>
+                    <div class="banner-image">🍞</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== CATEGORIES SECTION ============== -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Categories</h2>
+            <div class="categories-grid">
+                <div class="category-box">
+                    <div class="category-icon">🥬</div>
+                    <h3>Vegetables</h3>
+                    <p>(120 items)</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">🍎</div>
+                    <h3>Fruits</h3>
+                    <p>(85 items)</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">🥛</div>
+                    <h3>Dairy</h3>
+                    <p>(156 items)</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">🍗</div>
+                    <h3>Meat & Fish</h3>
+                    <p>(92 items)</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">🍞</div>
+                    <h3>Bakery</h3>
+                    <p>(67 items)</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">🥫</div>
+                    <h3>Pantry</h3>
+                    <p>(234 items)</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">🍬</div>
+                    <h3>Snacks</h3>
+                    <p>(178 items)</p>
+                </div>
+                <div class="category-box">
+                    <div class="category-icon">🧊</div>
+                    <h3>Frozen</h3>
+                    <p>(145 items)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== NEWLY ARRIVED BRANDS ============== -->
+    <section class="newly-arrived">
+        <div class="container">
+            <h2 class="section-title">Newly Arrived Brands</h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <div class="brand-image">🍓</div>
+                    <h3>Organic Fresh</h3>
+                    <p>Premium Quality</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-image">🥒</div>
+                    <h3>Green Valley</h3>
+                    <p>Farm Fresh</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-image">🌾</div>
+                    <h3>Golden Harvest</h3>
+                    <p>Natural Grains</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-image">🧈</div>
+                    <h3>Dairy Delight</h3>
+                    <p>Pure & Fresh</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-image">🍯</div>
+                    <h3>Sweet Honey</h3>
+                    <p>Organic Honey</p>
+                </div>
+                <div class="brand-card">
+                    <div class="brand-image">🥬</div>
+                    <h3>Fresh Greens</h3>
+                    <p>Healthy Choice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== TRENDING PRODUCTS ============== -->
+    <section class="products-section trending-section">
+        <div class="container">
+            <h2 class="section-title">Trending Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🍅</div>
+                    <h3>Fresh Tomatoes</h3>
+                    <p class="price">$4.99 <span class="original">$6.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🥦</div>
+                    <h3>Broccoli</h3>
+                    <p class="price">$3.49 <span class="original">$4.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍌</div>
+                    <h3>Bananas (Fresh)</h3>
+                    <p class="price">$2.99 <span class="original">$3.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🥕</div>
+                    <h3>Carrots</h3>
+                    <p class="price">$2.49 <span class="original">$3.49</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍎</div>
+                    <h3>Red Apples</h3>
+                    <p class="price">$5.99 <span class="original">$7.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🧅</div>
+                    <h3>Onions</h3>
+                    <p class="price">$1.99 <span class="original">$2.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍊</div>
+                    <h3>Fresh Oranges</h3>
+                    <p class="price">$6.99 <span class="original">$8.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🥒</div>
+                    <h3>Cucumbers</h3>
+                    <p class="price">$2.49 <span class="original">$3.49</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== BEST SELLING PRODUCTS ============== -->
+    <section class="products-section best-selling-section">
+        <div class="container">
+            <h2 class="section-title">Best Selling Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🥛</div>
+                    <h3>Fresh Milk (1L)</h3>
+                    <p class="price">$3.99 <span class="original">$5.49</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🧀</div>
+                    <h3>Cheddar Cheese</h3>
+                    <p class="price">$7.99 <span class="original">$10.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🥚</div>
+                    <h3>Organic Eggs (12)</h3>
+                    <p class="price">$5.99 <span class="original">$7.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍞</div>
+                    <h3>Whole Wheat Bread</h3>
+                    <p class="price">$3.49 <span class="original">$4.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍗</div>
+                    <h3>Chicken Breast</h3>
+                    <p class="price">$9.99 <span class="original">$13.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍣</div>
+                    <h3>Fresh Salmon</h3>
+                    <p class="price">$14.99 <span class="original">$19.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🥩</div>
+                    <h3>Ground Beef</h3>
+                    <p class="price">$8.99 <span class="original">$11.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🧈</div>
+                    <h3>Pure Butter</h3>
+                    <p class="price">$6.99 <span class="original">$8.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== DISCOUNT SECTION ============== -->
+    <section class="discount-section">
+        <div class="container">
+            <div class="discount-card">
+                <h2>Get 25% Discount on Your First Purchase!</h2>
+                <p>Sign up now and unlock exclusive savings</p>
+                <form class="discount-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit" class="submit-btn">Claim Discount</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== MOST POPULAR PRODUCTS ============== -->
+    <section class="products-section popular-section">
+        <div class="container">
+            <h2 class="section-title">Most Popular Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">🍯</div>
+                    <h3>Organic Honey</h3>
+                    <p class="price">$12.99 <span class="original">$16.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🌾</div>
+                    <h3>Brown Rice</h3>
+                    <p class="price">$4.99 <span class="original">$6.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🥜</div>
+                    <h3>Peanut Butter</h3>
+                    <p class="price">$6.99 <span class="original">$8.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🫒</div>
+                    <h3>Olive Oil</h3>
+                    <p class="price">$9.99 <span class="original">$13.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🧂</div>
+                    <h3>Sea Salt</h3>
+                    <p class="price">$3.99 <span class="original">$4.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🌶️</div>
+                    <h3>Red Chili Powder</h3>
+                    <p class="price">$5.99 <span class="original">$7.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🍫</div>
+                    <h3>Dark Chocolate</h3>
+                    <p class="price">$4.49 <span class="original">$5.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">🥐</div>
+                    <h3>Croissant</h3>
+                    <p class="price">$3.99 <span class="original">$5.49</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== JUST ARRIVED ============== -->
+    <section class="products-section just-arrived-section">
+        <div class="container">
+            <h2 class="section-title">Just Arrived</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🫐</div>
+                    <h3>Fresh Blueberries</h3>
+                    <p class="price">$8.99 <span class="original">$11.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🍇</div>
+                    <h3>Red Grapes</h3>
+                    <p class="price">$7.99 <span class="original">$10.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🥝</div>
+                    <h3>Kiwi Fruit</h3>
+                    <p class="price">$5.99 <span class="original">$7.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🍑</div>
+                    <h3>Peaches</h3>
+                    <p class="price">$6.49 <span class="original">$8.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🍉</div>
+                    <h3>Watermelon</h3>
+                    <p class="price">$9.99 <span class="original">$12.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🍍</div>
+                    <h3>Pineapple</h3>
+                    <p class="price">$7.49 <span class="original">$9.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🥥</div>
+                    <h3>Fresh Coconut</h3>
+                    <p class="price">$4.99 <span class="original">$6.99</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="badge">NEW</div>
+                    <div class="product-image">🍋</div>
+                    <h3>Lemons</h3>
+                    <p class="price">$3.99 <span class="original">$5.49</span></p>
+                    <div class="product-actions">
+                        <button class="like-btn">❤️ Like</button>
+                        <button class="dislike-btn">👎 Dislike</button>
+                    </div>
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== BLOG SECTION ============== -->
+    <section class="blog-section">
+        <div class="container">
+            <h2 class="section-title">Our Recent Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">📰</div>
+                    <h3>10 Healthy Eating Tips</h3>
+                    <p>Discover how to maintain a balanced diet with fresh groceries from FoodMart...</p>
+                    <div class="blog-meta">
+                        <span>📅 Sept 3, 2024</span>
+                        <span>✍️ By Admin</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">🌱</div>
+                    <h3>Organic vs Conventional</h3>
+                    <p>Learn the differences between organic and conventional produce and make the right choice...</p>
+                    <div class="blog-meta">
+                        <span>📅 Sept 1, 2024</span>
+                        <span>✍️ By Sarah</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">👨‍🍳</div>
+                    <h3>Easy Recipes for Beginners</h3>
+                    <p>Simple and delicious recipes using ingredients available at FoodMart...</p>
+                    <div class="blog-meta">
+                        <span>📅 Aug 28, 2024</span>
+                        <span>✍️ By Chef Mike</span>
+                    </div>
+                    <a href="#" class="read-more">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== APP SECTION ============== -->
+    <section class="app-section">
+        <div class="container">
+            <div class="app-content">
+                <h2>Shop Faster with FoodMart App</h2>
+                <p>Download our mobile app and enjoy exclusive deals, faster checkout, and real-time order tracking!</p>
+                <div class="app-buttons">
+                    <button class="app-btn">📱 Download on App Store</button>
+                    <button class="app-btn">🤖 Get it on Google Play</button>
+                </div>
+            </div>
+            <div class="app-image">📲</div>
+        </div>
+    </section>
+
+    <!-- ============== LOOKING FOR SECTION ============== -->
+    <section class="looking-for-section">
+        <div class="container">
+            <h2 class="section-title">People Are Also Looking For</h2>
+            <div class="looking-tags">
+                <a href="#" class="tag">Fresh Organic Vegetables</a>
+                <a href="#" class="tag">Best Quality Fruits</a>
+                <a href="#" class="tag">Dairy Products</a>
+                <a href="#" class="tag">Bakery Items</a>
+                <a href="#" class="tag">Meat & Seafood</a>
+                <a href="#" class="tag">Frozen Foods</a>
+                <a href="#" class="tag">Pantry Staples</a>
+                <a href="#" class="tag">Beverages</a>
+                <a href="#" class="tag">Snacks & Treats</a>
+                <a href="#" class="tag">Organic Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== BENEFITS SECTION ============== -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚚</div>
+                    <h3>Free Delivery</h3>
+                    <p>Free shipping on orders over $50</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>Quality Guarantee</h3>
+                    <p>100% fresh and premium quality products</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Guaranteed Savings</h3>
+                    <p>Best prices and exclusive discounts</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📅</div>
+                    <h3>Daily Offers</h3>
+                    <p>New deals every single day</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <h3>Ultra Rewards</h3>
+                    <p>Earn points on every purchase</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">👥</div>
+                    <h3>Customer Service</h3>
+                    <p>24/7 dedicated customer support</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <h3>Live Chat Support</h3>
+                    <p>Instant help from our team</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">📧</div>
+                    <h3>Subscribe Us</h3>
+                    <p>Get updates on latest deals & offers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============== NEWSLETTER SECTION ============== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Subscribe to FoodMart Newsletter</h2>
+            <p>Get exclusive offers and updates delivered to your inbox</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============== FOOTER ============== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About FoodMart</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">🐦 Twitter</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">📺 YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 FoodMart Grocery Store. All rights reserved.</p>
+                <p>Made with ❤️ for your healthy lifestyle</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
